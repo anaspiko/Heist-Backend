@@ -4,8 +4,6 @@ import com.task.heistback.common.Constants;
 import com.task.heistback.model.Heist;
 import com.task.heistback.model.Member;
 import com.task.heistback.service.HeistService;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.data.jpa.repository.Query;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -54,9 +52,9 @@ public class HeistController {
     }
 
     //insert Member To Heist
-    @GetMapping("/insertMemberToHeist/{heistId}")
-    public ResponseEntity<Heist> insertMemberToHeist(@PathVariable Long heistId, Long memberId) {
-        return ResponseEntity.ok(heistService.insertMemberIntoHeist(heistId, memberId));
+    @GetMapping("/addMemberToHeist/{heistId}")
+    public ResponseEntity<Heist> addMemberToHeist(@PathVariable Long heistId, Long memberId) {
+        return ResponseEntity.ok(heistService.addMemberToHeist(heistId, memberId));
     }
 
     //remove Member From Heist

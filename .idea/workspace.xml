@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce27082f-eaeb-4537-b15e-959e9f14ef96" name="Changes" comment="" />
+    <list default="true" id="ce27082f-eaeb-4537-b15e-959e9f14ef96" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/HeistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/HeistController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/repository/MemberRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/MemberService.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/MemberService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/UserService.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,8 +52,8 @@
     </option>
     <option name="myId2Visible">
       <map>
-        <entry key="JPA Inspector" value="true" />
-        <entry key="JPA Palette" value="true" />
+        <entry key="JPA Inspector" value="false" />
+        <entry key="JPA Palette" value="false" />
         <entry key="JPA Structure" value="false" />
       </map>
     </option>
@@ -94,14 +105,20 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/MemberController.java</url>
-          <line>49</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java</url>
           <line>43</line>
@@ -112,6 +129,10 @@
           <line>52</line>
           <option name="timeStamp" value="8" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="org.springframework.data.mapping.PropertyReferenceException" package="org.springframework.data.mapping" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

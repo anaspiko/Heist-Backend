@@ -2,26 +2,18 @@ package com.task.heistback.service;
 
 import com.task.heistback.common.Constants;
 import com.task.heistback.model.Member;
-import com.task.heistback.model.Skill;
-import com.task.heistback.model.User;
 import com.task.heistback.repository.MemberRepository;
-import com.task.heistback.repository.UserRepository;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Optional;
-import java.util.Set;
 
 @Service
 public class MemberService {
 
     private final MemberRepository memberRepository;
-    private final UserRepository userRepository;
 
-    public MemberService(MemberRepository memberRepository, UserRepository  userRepository){
+    public MemberService(MemberRepository memberRepository){
         this.memberRepository = memberRepository;
-        this.userRepository = userRepository;
     }
 
     public List<Member> findAll() {
@@ -60,4 +52,9 @@ public class MemberService {
         return memberRepository.save(member);
     }
 
+    public Boolean deleteMember(Long memberId) {
+        Member member = memberRepository.findById(memberId).orElse(null);
+        memberRepository.delete(member);
+        return true;
+    }
 }

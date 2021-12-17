@@ -1,13 +1,16 @@
 package com.task.heistback.controller;
 
 import com.task.heistback.common.Constants;
+import com.task.heistback.model.Heist;
 import com.task.heistback.model.Member;
+import com.task.heistback.repository.MemberRepository;
 import com.task.heistback.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @CrossOrigin(origins = Constants.BASE_URL)
@@ -56,4 +59,9 @@ public class MemberController {
         return ResponseEntity.ok(memberService.updateMemberSkill(memberId, member));
     }
 
+    //delete member
+    @DeleteMapping("/{memberId}")
+    public ResponseEntity<Boolean> deleteMember(@PathVariable Long memberId) {
+        return ResponseEntity.ok(memberService.deleteMember(memberId));
+    }
 }

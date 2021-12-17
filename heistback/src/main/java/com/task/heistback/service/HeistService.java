@@ -40,7 +40,7 @@ public class HeistService {
         return heistRepository.findById(heistId + 0L).orElse(null).getMembers();
     }
 
-    public Heist insertMemberIntoHeist(Long heistId, Long memberId) {
+    public Heist addMemberToHeist(Long heistId, Long memberId) {
         Set<Member> members = new java.util.HashSet<>(Collections.emptySet());
         if (memberId.equals(null) || memberId == 0) {
             return null;
