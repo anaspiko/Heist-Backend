@@ -40,12 +40,12 @@ public class HeistService {
         return heistRepository.findById(heistId + 0L).orElse(null).getMembers();
     }
 
-    public Heist addMemberToHeist(Long heistId, Long memberId) {
+    public Heist addMemberToHeist(Long heistId, Member member) {
         Set<Member> members = new java.util.HashSet<>(Collections.emptySet());
-        if (memberId.equals(null) || memberId == 0) {
+        if (member.equals(null) || member.getId() == 0) {
             return null;
         }
-        members.add(memberRepository.findById(memberId).orElse(null));
+        members.add(memberRepository.findById(member.getId()).orElse(null));
         Heist savedHeist;
         if (heistId == 0) {
             Heist newHeist = new Heist(1L, "", "", "", Collections.emptySet());
@@ -58,9 +58,9 @@ public class HeistService {
         return heistRepository.save(savedHeist);
     }
 
-    public Heist removeMemberFromHeist(Long heistId, Long memberId) {
+    public Heist removeMemberFromHeist(Long heistId, Member member) {
         Set<Member> members = new java.util.HashSet<>(Collections.emptySet());
-        if (memberId.equals(null) || memberId == 0) {
+        if (member.equals(null) || member.getId() == 0L) {
             return null;
         }
         if (heistId == 0) {
@@ -71,7 +71,7 @@ public class HeistService {
         Heist savedHeist;
         savedHeist = heistRepository.findById(heistId).orElse(null);
         members.addAll(savedHeist.getMembers());
-        members.remove(memberRepository.findById(memberId).orElse(null));
+        members.remove(memberRepository.findById(member.getId()).orElse(null));
         savedHeist.setMembers(members);
         return heistRepository.save(savedHeist);
     }

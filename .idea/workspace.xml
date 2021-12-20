@@ -9,6 +9,7 @@
       <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/HeistController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/HeistController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/MemberController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/model/Heist.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/model/Heist.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/model/User.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/repository/MemberRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/repository/MemberRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/repository/UserRepository.java" beforeDir="false" />
@@ -119,20 +120,35 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java</url>
-          <line>43</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java</url>
-          <line>52</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="org.springframework.data.mapping.PropertyReferenceException" package="org.springframework.data.mapping" />
           <option name="timeStamp" value="10" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/controller/HeistController.java</url>
+          <line>62</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java</url>
+          <line>43</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/heistback/src/main/java/com/task/heistback/service/HeistService.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

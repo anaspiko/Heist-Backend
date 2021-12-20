@@ -52,15 +52,15 @@ public class HeistController {
     }
 
     //insert Member To Heist
-    @GetMapping("/addMemberToHeist/{heistId}")
-    public ResponseEntity<Heist> addMemberToHeist(@PathVariable Long heistId, Long memberId) {
-        return ResponseEntity.ok(heistService.addMemberToHeist(heistId, memberId));
+    @PutMapping("/addMemberToHeist/{heistId}")
+    public ResponseEntity<Heist> addMemberToHeist(@PathVariable Long heistId, @RequestBody  Member member) {
+        return ResponseEntity.ok(heistService.addMemberToHeist(heistId, member));
     }
 
     //remove Member From Heist
-    @GetMapping("/removeMemberFromHeist/{heistId}")
-    public ResponseEntity<Heist> removeMemberFromHeist(@PathVariable Long heistId, Long memberId) {
-        return ResponseEntity.ok(heistService.removeMemberFromHeist(heistId, memberId));
+    @PutMapping("/removeMemberFromHeist/{heistId}")
+    public ResponseEntity<Heist> removeMemberFromHeist(@PathVariable Long heistId, @RequestBody Member member) {
+        return ResponseEntity.ok(heistService.removeMemberFromHeist(heistId, member));
     }
 
 }

@@ -18,9 +18,6 @@ public class Heist {
     @Column(name ="status")
     private String status;
 
-    @Column(name = "location")
-    private String location;
-
     @ManyToMany(cascade = {CascadeType.ALL})
     @JoinTable(
             name = "Heist_Member",
@@ -43,7 +40,6 @@ public class Heist {
         this.id = id;
         this.name = name;
         this.status = status;
-        this.location = location;
         this.requiredSkills = requiredSkills;
     }
 
@@ -69,14 +65,6 @@ public class Heist {
 
     public void setStatus(String status) {
         this.status = status;
-    }
-
-    public String getLocation() {
-        return location;
-    }
-
-    public void setLocation(String location) {
-        this.location = location;
     }
 
     public Set<Member> getMembers() {
